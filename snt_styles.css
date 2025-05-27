@@ -1,26 +1,69 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le WEB explication : page accueil</title>
-    <link href="snt_styles.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="align_center">Le WEB : son invention et son créateur</h1>
-    <h2>Rapide explication</h2>
-    <p>
-        Le web est un sujet complexe et très intéressant. Nous avons
-        donc séparé ce site en plusieurs pages : une
-        sur son créateur, 
-        <a href="web_creator.html" title="cliquer pour en apprendre plus">John Berners-Lee</a>,
-        et une sur ses trois 
-        <a href="technologies_fondatrices.html" title="cliquer pour en apprendre plus">technologies fondatrices</a>.
-    </p>
-    <p>
-        Et en bonus, notre équipe vous a concocté une petite page sur le
-        <a href="steam.html">logiciel STEAM</a>.
-    </p>
-</body>
-<!-- ceci est un easter egg -->
-</html>
+/* Police personnalisée (si tu l’utilises dans ton projet) */
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
+
+/* Appliquer une boîte flexible et réactive à tout */
+* {
+  box-sizing: border-box;
+}
+
+/* S'assurer que tout s'affiche bien sur mobile */
+html, body {
+  margin: 0;
+  padding: 1em;
+  height: 100%;
+  font-family: 'Tektur', sans-serif;
+  background-image: url("background.jpg"); /* Remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* Superposition pour améliorer la lisibilité */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* voile sombre */
+  z-index: -1;
+}
+
+/* Titres */
+h1, h2 {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Centrage personnalisé */
+.align_center {
+  text-align: center;
+}
+
+/* Paragraphes */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+/* Liens */
+a {
+  color: #4dd0e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pour éviter les débordements horizontaux */
+body {
+  overflow-x: hidden;
+}
+
