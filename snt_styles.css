@@ -86,3 +86,18 @@ img.center {
 ul.petit {
   font-size: 80%;
 }
+
+/* Ajout recommandé */
+html, body {
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/* Amélioration pour les mobiles : */
+body {
+  background-size: cover; /* cover au lieu de 100% */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
