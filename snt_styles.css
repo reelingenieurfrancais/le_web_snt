@@ -3,7 +3,7 @@
 * {
   font-family: "Tektur", sans-serif;
   font-optical-sizing: auto;
-  box-sizing: border-box; /* ajouté ici pour que tous les éléments en bénéficient */
+  box-sizing: border-box;
 }
 
 *::selection {
@@ -31,10 +31,10 @@ html, body {
 body {
   background-image: url("https://img.freepik.com/free-photo/3d-rendering-hexagonal-texture-background_23-2150796421.jpg?t=st=1742291789~exp=1742295389~hmac=92042eced38ed624981667d0a1ccc6cb63aab945f64b9b45a9a962e51426ba92&w=1060");
   background-repeat: no-repeat;
-  background-size: cover;      /* corrige background-size */
+  background-size: cover; 
   background-position: center;
-  background-attachment: scroll; /* scroll pour éviter bugs mobile */
-  margin: 0;                   /* corrige margin */
+  background-attachment: scroll;
+  margin: 0;
 }
 
 p {
