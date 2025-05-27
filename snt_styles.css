@@ -3,11 +3,12 @@
 * {
   font-family: "Tektur", sans-serif;
   font-optical-sizing: auto;
+  box-sizing: border-box; /* ajouté ici pour que tous les éléments en bénéficient */
 }
 
 *::selection {
   color: #7fff00;
-  background: rgb(0, 145, 199, 0.5);
+  background: rgba(0, 145, 199, 0.5);
 }
 
 header {
@@ -20,12 +21,20 @@ header {
   margin: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 1em;
+  height: 100%;
+  color: white;
+}
+
 body {
   background-image: url("https://img.freepik.com/free-photo/3d-rendering-hexagonal-texture-background_23-2150796421.jpg?t=st=1742291789~exp=1742295389~hmac=92042eced38ed624981667d0a1ccc6cb63aab945f64b9b45a9a962e51426ba92&w=1060");
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 1;
-/* images/background.jpeg */
+  background-size: cover;      /* corrige background-size */
+  background-position: center;
+  background-attachment: scroll; /* scroll pour éviter bugs mobile */
+  margin: 0;                   /* corrige margin */
 }
 
 p {
@@ -33,12 +42,13 @@ p {
 }
 
 h1 {
-  color: red; 
+  color: red;
   font-size: 400%;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -85,19 +95,4 @@ img.center {
 
 ul.petit {
   font-size: 80%;
-}
-
-/* Ajout recommandé */
-html, body {
-  margin: 0;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-/* Amélioration pour les mobiles : */
-body {
-  background-size: cover; /* cover au lieu de 100% */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
