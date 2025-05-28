@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+html { overflow-y: hidden; } 
+
 *::selection {
   color: #7fff00;
   background: rgba(0, 145, 199, 0.5);
